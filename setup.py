@@ -10,13 +10,13 @@ print(1)
 profile = instaloader.Profile.from_username(bot.context, 'summer.clarkee')
 print(2)
 # Retrieving the usernames of all followers
-# followers = [follower.username for follower in profile.get_followers()]
+followers = [follower.username for follower in profile.get_followers()]
 print(1)
 # Converting the data to a DataFrame
-# followers_df = pd.DataFrame(followers)
+followers_df = pd.DataFrame(followers)
 print(1)
 # Storing the results in a CSV file
-# followers_df.to_csv('followers.csv', index=False)
+followers_df.to_csv('followers.csv', index=False)
 print(1)
 # Retrieving the usernames of all followings
 followings = [followee.username for followee in profile.get_followees()]
